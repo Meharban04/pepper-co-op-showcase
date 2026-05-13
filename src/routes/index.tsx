@@ -2,7 +2,6 @@ import { createFileRoute } from "@tanstack/react-router";
 import saltImg from "@/assets/salt-control-center.png";
 import diagImg from "@/assets/user-diagnostics.png";
 import recImg from "@/assets/recommended-similar.png";
-import bizOrgImg from "@/assets/business-organizations.png";
 
 export const Route = createFileRoute("/")({
   component: Index,
@@ -33,18 +32,6 @@ const projects: Project[] = [
   },
   {
     num: "Tool 02",
-    tag: "Business Org Selector",
-    title: "Business Organizations Browser",
-    lede: "The entry point into the SALT Control Center — search any business org and jump straight into managing its suppliers.",
-    problem:
-      "Internal teams had to dig through admin panels and spreadsheets to find the right business org and its suppliers before configuring anything.",
-    build:
-      "Built a searchable directory with distributor filters (hide test, hide app-review), live supplier counts, and a single-click path into per-org SALT configuration.",
-    img: bizOrgImg,
-    reverse: true,
-  },
-  {
-    num: "Tool 03",
     tag: "Support Tooling",
     title: "User Diagnostics",
     lede: "A purpose-built lookup tool for diagnosing user access issues across operator and distributor employees in seconds.",
@@ -53,9 +40,10 @@ const projects: Project[] = [
     build:
       "Shipped a clean diagnostics surface: search by name / email / phone, view recently created users, and surface user type, status, and account age at a glance.",
     img: diagImg,
+    reverse: true,
   },
   {
-    num: "Tool 04",
+    num: "Tool 03",
     tag: "Catalog Intelligence",
     title: "Recommended + Similar Items",
     lede: "Internal tooling for assigning recommended and substitute items across distributor catalogs, with bi-directional sync.",
@@ -64,7 +52,6 @@ const projects: Project[] = [
     build:
       "Built a focused interface for searching items, assigning recommended + similar SKUs, managing item substitutions, and toggling bi-directional sync so links stay reciprocal.",
     img: recImg,
-    reverse: true,
   },
 ];
 

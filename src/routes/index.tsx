@@ -61,6 +61,51 @@ const skills = {
   Intelligence: ["OpenAI API", "Anthropic Claude", "Perplexity", "Prompt Eng"],
 };
 
+type Goal = {
+  num: string;
+  category: string;
+  title: string;
+  goal: string;
+  action: string;
+  outcome: string;
+};
+
+const goals: Goal[] = [
+  {
+    num: "Goal 01",
+    category: "Critical & Creative Thinking",
+    title: "Inquiry & Analysis",
+    goal:
+      "Get genuinely good at unpacking problems at Pepper — not just the obvious surface, but the hidden dependencies and downstream effects. Use tools like Cursor, Claude, and AWS to generate multiple solution paths and design systems that don't just patch a problem today, but help Pepper scale tomorrow.",
+    action:
+      "On every project I started by sitting with the team that owned the pain — ops, support, catalog — and mapping the current workflow end-to-end before writing a line of code. I'd brainstorm at least three angles per problem, weigh which stack made sense (Lovable vs. n8n vs. raw SQL), and pressure-test the shortlist with my manager before committing.",
+    outcome:
+      "The SALT Control Center and Recommended + Similar tools both came out of this loop — collapsing what had been multi-tab, multi-team workflows into a single screen. I can now defend why each tool exists, what it replaced, and which downstream metrics it should move.",
+  },
+  {
+    num: "Goal 02",
+    category: "Communicating",
+    title: "Oral Communication",
+    goal:
+      "Get sharper at talking about my work — especially when explaining technical decisions to people who aren't technical. Present the tools I build with confidence, drive better requirement-gathering meetings, and ask the kind of questions that surface what teams actually need.",
+    action:
+      "Before every demo I rehearsed with my audience in mind first — adjusting depth for ops vs. engineering. In meetings I leaned into active listening: restating what stakeholders said, asking what would break the workflow, and looping back with my manager for feedback on how the message landed.",
+    outcome:
+      "I demoed the SALT Control Center and User Diagnostics tools live to cross-functional teammates and walked away with concrete adoption — not just polite nods. Stakeholders started pulling me into scoping conversations earlier, which is the clearest signal the communication was working.",
+  },
+  {
+    num: "Goal 03",
+    category: "Technological Literacy",
+    title: "Stack Fluency",
+    goal:
+      "Build real fluency across Pepper's stack — the no-code platforms, the AI layer, and the data plumbing underneath. Move beyond knowing how to use a tool to understanding why we picked it, where it breaks, and how to wire several together into something useful, fast.",
+    action:
+      "I went deep on Lovable and n8n on every project, pushed AI features into the workflow wherever they removed manual toil (Claude for lead scoring, OpenAI for catalog tasks), and kept sharpening SQL + Python for the moments no-code couldn't carry the weight. I treated each tool's limits as the interesting part.",
+    outcome:
+      "I shipped three internal tools and an AI-powered lead scoring automation in a single term, mixing Lovable, n8n, Postgres, and LLM APIs. I can now scope an idea on Monday and have a working prototype in front of users by Friday — which is the bar I wanted to hit.",
+  },
+];
+
 function Index() {
   return (
     <div className="min-h-screen bg-background text-foreground selection:bg-accent/30">
@@ -71,6 +116,7 @@ function Index() {
           </span>
           <div className="hidden sm:flex gap-8 text-sm font-medium">
             <a href="#projects" className="hover:text-accent transition-colors">Projects</a>
+            <a href="#goals" className="hover:text-accent transition-colors">Goals</a>
             <a href="#skills" className="hover:text-accent transition-colors">Capabilities</a>
             <a href="#contact" className="hover:text-accent transition-colors">Connect</a>
           </div>
@@ -161,6 +207,64 @@ function Index() {
               </div>
             </article>
           ))}
+        </section>
+
+        <section
+          id="goals"
+          className="mt-40 md:mt-48 pt-20 border-t border-border"
+        >
+          <div className="mb-16 md:mb-20 max-w-3xl">
+            <span className="font-mono text-xs uppercase tracking-widest text-muted-foreground">
+              Learning Goals · Term 03
+            </span>
+            <h2 className="mt-4 text-4xl md:text-6xl font-extrabold tracking-tighter">
+              What I set out to learn.
+            </h2>
+            <p className="mt-6 text-muted-foreground leading-relaxed">
+              Three goals tracked across the term — the rationale, the moves I
+              made, and how I know I hit them.
+            </p>
+          </div>
+          <div className="space-y-16 md:space-y-20">
+            {goals.map((g) => (
+              <article
+                key={g.title}
+                className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-start"
+              >
+                <div className="lg:col-span-4 space-y-4">
+                  <div className="flex items-center gap-3">
+                    <span className="size-2 bg-accent rounded-full" />
+                    <span className="font-mono text-sm uppercase tracking-widest">
+                      {g.num} / {g.category}
+                    </span>
+                  </div>
+                  <h3 className="text-3xl md:text-4xl font-extrabold tracking-tighter">
+                    {g.title}
+                  </h3>
+                </div>
+                <div className="lg:col-span-8 space-y-4">
+                  <div className="p-6 bg-surface border-l-2 border-accent">
+                    <h4 className="font-mono text-xs uppercase tracking-widest mb-2 text-muted-foreground">
+                      Goal
+                    </h4>
+                    <p className="text-sm leading-relaxed">{g.goal}</p>
+                  </div>
+                  <div className="p-6 bg-surface border-l-2 border-foreground">
+                    <h4 className="font-mono text-xs uppercase tracking-widest mb-2 text-muted-foreground">
+                      Action Plan
+                    </h4>
+                    <p className="text-sm leading-relaxed">{g.action}</p>
+                  </div>
+                  <div className="p-6 bg-surface border-l-2 border-accent">
+                    <h4 className="font-mono text-xs uppercase tracking-widest mb-2 text-muted-foreground">
+                      Measure of Success
+                    </h4>
+                    <p className="text-sm leading-relaxed">{g.outcome}</p>
+                  </div>
+                </div>
+              </article>
+            ))}
+          </div>
         </section>
 
         <section

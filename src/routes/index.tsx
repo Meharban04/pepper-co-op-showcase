@@ -139,9 +139,9 @@ function Index() {
                 Co-op Analyst · Pepper Labs
               </span>
               <h1 className="mt-6 text-6xl sm:text-7xl md:text-[112px] font-extrabold leading-[0.88] tracking-tighter text-balance">
-                BIZ&nbsp;OPS
+                PEPPER
                 <br />
-                PRODUCT
+                LABS
                 <br />
                 CO-OP
               </h1>
@@ -367,25 +367,13 @@ function Index() {
         id="contact"
         className="bg-surface py-20 md:py-24 border-t border-border mt-20"
       >
-        <div className="max-w-7xl mx-auto px-6">
-          <div className="flex flex-col md:flex-row justify-between items-start md:items-end gap-10">
-            <div className="max-w-md">
-              <h2 className="text-3xl md:text-4xl font-extrabold tracking-tighter mb-4">
-                Building what's next in food-tech.
-              </h2>
-              <p className="text-muted-foreground">
-                Open to next steps after this co-op term. Let's talk.
-              </p>
-            </div>
-            <div className="flex flex-col items-start md:items-end gap-3">
-              <a
-                href="mailto:mmultani@uoguelph.ca"
-                className="text-xl md:text-2xl font-extrabold tracking-tight hover:text-accent transition-colors underline decoration-accent/40 underline-offset-8"
-              >
-                mmultani@uoguelph.ca
-              </a>
-            </div>
-          </div>
+        <div className="max-w-7xl mx-auto px-6 flex justify-end">
+          <a
+            href="mailto:mmultani@uoguelph.ca"
+            className="text-xl md:text-2xl font-extrabold tracking-tight hover:text-accent transition-colors underline decoration-accent/40 underline-offset-8"
+          >
+            mmultani@uoguelph.ca
+          </a>
         </div>
       </footer>
     </div>

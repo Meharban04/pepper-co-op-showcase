@@ -139,11 +139,11 @@ function Index() {
                 Co-op Analyst · Pepper Labs
               </span>
               <h1 className="mt-6 text-6xl sm:text-7xl md:text-[112px] font-extrabold leading-[0.88] tracking-tighter text-balance">
-                BIZ&nbsp;OPS
+                PEPPER
                 <br />
-                PRODUCT
+                LABS
                 <br />
-                ENGINEER
+                CO-OP
               </h1>
               <p className="mt-8 text-lg md:text-2xl text-muted-foreground leading-relaxed text-pretty max-w-2xl">
                 Four months shipping internal tools and AI-powered automations

@@ -68,6 +68,7 @@ type Goal = {
   goal: string;
   action: string;
   outcome: string;
+  reflection: string;
 };
 
 const goals: Goal[] = [
@@ -81,6 +82,8 @@ const goals: Goal[] = [
       "On every project I started by sitting with the team that owned the pain — ops, support, catalog — and mapping the current workflow end-to-end before writing a line of code. I'd brainstorm at least three angles per problem, weigh which stack made sense (Lovable vs. n8n vs. raw SQL), and pressure-test the shortlist with my manager before committing.",
     outcome:
       "The SALT Control Center and Recommended + Similar tools both came out of this loop — collapsing what had been multi-tab, multi-team workflows into a single screen. I can now defend why each tool exists, what it replaced, and which downstream metrics it should move.",
+    reflection:
+      "Looking back, the biggest shift was learning to slow down at the start of a project instead of jumping straight to building. The instinct to ship fast is still there, but I trust the upfront mapping more now — it consistently saved me from rebuilding things mid-stream. Where I want to keep growing is in quantifying impact: I can articulate what each tool replaced, but I'd like to get sharper at tying that back to hard numbers earlier in the process.",
   },
   {
     num: "Goal 02",
@@ -92,6 +95,8 @@ const goals: Goal[] = [
       "Before every demo I rehearsed with my audience in mind first — adjusting depth for ops vs. engineering. In meetings I leaned into active listening: restating what stakeholders said, asking what would break the workflow, and looping back with my manager for feedback on how the message landed.",
     outcome:
       "I demoed the SALT Control Center and User Diagnostics tools live to cross-functional teammates and walked away with concrete adoption — not just polite nods. Stakeholders started pulling me into scoping conversations earlier, which is the clearest signal the communication was working.",
+    reflection:
+      "Early in the term I leaned too hard on showing the build instead of explaining the why. Once I started leading with the problem and the user, demos landed differently — people asked sharper questions and surfaced edge cases I'd missed. I'm more comfortable in the room now, but I want to keep working on async communication too: tighter Loom walkthroughs and written specs that don't rely on me being there to narrate.",
   },
   {
     num: "Goal 03",
@@ -103,6 +108,8 @@ const goals: Goal[] = [
       "I went deep on Lovable and n8n on every project, pushed AI features into the workflow wherever they removed manual toil (Claude for lead scoring, OpenAI for catalog tasks), and kept sharpening SQL + Python for the moments no-code couldn't carry the weight. I treated each tool's limits as the interesting part.",
     outcome:
       "I shipped three internal tools and an AI-powered lead scoring automation in a single term, mixing Lovable, n8n, Postgres, and LLM APIs. I can now scope an idea on Monday and have a working prototype in front of users by Friday — which is the bar I wanted to hit.",
+    reflection:
+      "What surprised me most was how much the tools themselves shaped how I thought about problems — knowing n8n well meant I started seeing automation opportunities everywhere, not just where someone asked for them. I hit the speed bar I wanted, but I noticed the gap between prototype and production-grade is where the real engineering lives, and that's the next bar I want to clear.",
   },
 ];
 
@@ -260,6 +267,12 @@ function Index() {
                       Measure of Success
                     </h4>
                     <p className="text-sm leading-relaxed">{g.outcome}</p>
+                  </div>
+                  <div className="p-6 bg-surface border-l-2 border-foreground">
+                    <h4 className="font-mono text-xs uppercase tracking-widest mb-2 text-muted-foreground">
+                      Reflection
+                    </h4>
+                    <p className="text-sm leading-relaxed">{g.reflection}</p>
                   </div>
                 </div>
               </article>

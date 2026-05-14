@@ -150,7 +150,7 @@ function Index() {
                 <span className="text-foreground font-medium underline decoration-accent decoration-2 underline-offset-4">
                   Pepper
                 </span>
-                . Code, no-code, and a bias for action.
+                .
               </p>
             </div>
             <div className="flex flex-col gap-1 shrink-0">

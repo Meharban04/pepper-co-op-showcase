@@ -139,9 +139,9 @@ function Index() {
                 Co-op Analyst · Pepper Labs
               </span>
               <h1 className="mt-6 text-6xl sm:text-7xl md:text-[112px] font-extrabold leading-[0.88] tracking-tighter text-balance">
-                PEPPER
+                BIZ&nbsp;OPS
                 <br />
-                LABS
+                PRODUCT
                 <br />
                 CO-OP
               </h1>

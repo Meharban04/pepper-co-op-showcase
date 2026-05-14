@@ -379,20 +379,11 @@ function Index() {
             </div>
             <div className="flex flex-col items-start md:items-end gap-3">
               <a
-                href="#"
+                href="mailto:mmultani@uoguelph.ca"
                 className="text-xl md:text-2xl font-extrabold tracking-tight hover:text-accent transition-colors underline decoration-accent/40 underline-offset-8"
               >
-                LinkedIn
+                mmultani@uoguelph.ca
               </a>
-              <a
-                href="#"
-                className="text-xl md:text-2xl font-extrabold tracking-tight hover:text-accent transition-colors underline decoration-accent/40 underline-offset-8"
-              >
-                Email
-              </a>
-              <span className="font-mono text-xs text-muted-foreground mt-6">
-                © 2026 — BUILT AT PEPPER LABS
-              </span>
             </div>
           </div>
         </div>

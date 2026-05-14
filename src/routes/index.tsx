@@ -122,6 +122,7 @@ function Index() {
             CO-OP_LOG:2026.01_04
           </span>
           <div className="hidden sm:flex gap-8 text-sm font-medium">
+            <a href="#company" className="hover:text-accent transition-colors">Company</a>
             <a href="#projects" className="hover:text-accent transition-colors">Projects</a>
             <a href="#goals" className="hover:text-accent transition-colors">Goals</a>
             <a href="#skills" className="hover:text-accent transition-colors">Capabilities</a>
@@ -166,6 +167,59 @@ function Index() {
             </div>
           </div>
         </header>
+
+        <section id="company" className="mb-32 md:mb-40">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-start">
+            <div className="lg:col-span-4 space-y-4">
+              <div className="flex items-center gap-3">
+                <span className="size-2 bg-accent rounded-full" />
+                <span className="font-mono text-sm uppercase tracking-widest">
+                  The Company
+                </span>
+              </div>
+              <h2 className="text-4xl md:text-5xl font-extrabold tracking-tighter">
+                Pepper Labs.
+              </h2>
+            </div>
+            <div className="lg:col-span-8 space-y-4">
+              <div className="p-6 bg-surface border-l-2 border-accent">
+                <h4 className="font-mono text-xs uppercase tracking-widest mb-2 text-muted-foreground">
+                  Mission
+                </h4>
+                <p className="text-sm leading-relaxed">
+                  Pepper is rebuilding the food supply chain from the ground
+                  up. Founded by tech veterans from Uber Eats, Google, and
+                  Amazon, the team ships digital tools that power foodservice
+                  distributors — modernizing an industry that still runs on
+                  phone calls, fax orders, and spreadsheets.
+                </p>
+              </div>
+              <div className="p-6 bg-surface border-l-2 border-foreground">
+                <h4 className="font-mono text-xs uppercase tracking-widest mb-2 text-muted-foreground">
+                  What They Do
+                </h4>
+                <p className="text-sm leading-relaxed">
+                  Pepper builds the operating system for foodservice — a
+                  platform connecting distributors, suppliers, and operators
+                  through smarter ordering, catalog intelligence, and
+                  AI-powered workflows that take friction out of every link in
+                  the chain.
+                </p>
+              </div>
+              <div className="p-6 bg-surface border-l-2 border-accent">
+                <h4 className="font-mono text-xs uppercase tracking-widest mb-2 text-muted-foreground">
+                  Why It Matters
+                </h4>
+                <p className="text-sm leading-relaxed">
+                  Foodservice is a multi-trillion dollar industry running on
+                  decades-old infrastructure. Pepper's bet: speed, ownership,
+                  and small teams shipping real software beat bureaucracy —
+                  and the supply chain is overdue for both.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
 
         <section id="projects" className="space-y-32 md:space-y-40">
           {projects.map((p, i) => (

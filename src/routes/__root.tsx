@@ -78,6 +78,10 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { property: "og:description", content: "Four months building internal tools and AI automations at Pepper Labs (Jan–Apr)." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
+      { name: "twitter:title", content: "Co-op Portfolio — Pepper Labs Biz Ops" },
+      { name: "twitter:description", content: "Four months building internal tools and AI automations at Pepper Labs (Jan–Apr)." },
+      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/628c70cb-08fb-424b-bc0d-7412ae26bb4d/id-preview-6f9d0bf1--3e91670d-c503-4e03-8889-209f0954378e.lovable.app-1778722896287.png" },
+      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/628c70cb-08fb-424b-bc0d-7412ae26bb4d/id-preview-6f9d0bf1--3e91670d-c503-4e03-8889-209f0954378e.lovable.app-1778722896287.png" },
     ],
     links: [
       {

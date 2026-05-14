@@ -122,6 +122,7 @@ function Index() {
             CO-OP_LOG:2026.01_04
           </span>
           <div className="hidden sm:flex gap-8 text-sm font-medium">
+            <a href="#company" className="hover:text-accent transition-colors">Company</a>
             <a href="#projects" className="hover:text-accent transition-colors">Projects</a>
             <a href="#goals" className="hover:text-accent transition-colors">Goals</a>
             <a href="#skills" className="hover:text-accent transition-colors">Capabilities</a>

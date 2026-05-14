@@ -25,20 +25,20 @@ const projects: Project[] = [
     title: "SALT Control Center",
     lede: "A unified control panel for managing distributor configuration, API integration, and rematch workflows across the Pepper supply graph.",
     problem:
-      "Onboarding a distributor required engineers to manually toggle SALT API integrations, edit configs, and trigger rematches across disconnected internal tools.",
+      "Onboarding a distributor used to mean engineers manually toggling SALT API integrations, editing configs, and kicking off rematches in three or four disconnected internal tools.",
     build:
-      "Designed and shipped the SALT Control Center: a single screen for distributor details, API toggles, configuration editing, rematch jobs, and per-supplier tool management.",
+      "Designed and shipped the SALT Control Center, a single screen that handles distributor details, API toggles, configuration editing, rematch jobs, and per supplier tool management.",
     img: saltImg,
   },
   {
     num: "Tool 02",
     tag: "Support Tooling",
     title: "User Diagnostics",
-    lede: "A purpose-built lookup tool for diagnosing user access issues across operator and distributor employees in seconds.",
+    lede: "A purpose built lookup tool for diagnosing user access issues across operator and distributor employees in seconds.",
     problem:
-      "Support and ops were manually querying the database to debug login, invite, and permission issues — slow, risky, and error-prone for non-technical teammates.",
+      "Support and ops were running raw database queries to debug login, invite, and permission issues. It was slow, risky, and pretty unfriendly to non technical teammates.",
     build:
-      "Shipped a clean diagnostics surface: search by name / email / phone, view recently created users, and surface user type, status, and account age at a glance.",
+      "Shipped a clean diagnostics surface. Search by name, email, or phone, see recently created users, and view user type, status, and account age in one place.",
     img: diagImg,
     reverse: true,
   },
@@ -46,11 +46,11 @@ const projects: Project[] = [
     num: "Tool 03",
     tag: "Catalog Intelligence",
     title: "Recommended + Similar Items",
-    lede: "Internal tooling for assigning recommended and substitute items across distributor catalogs, with bi-directional sync.",
+    lede: "Internal tooling for assigning recommended and substitute items across distributor catalogs, with bi directional sync.",
     problem:
-      "Catalog teams had no scalable way to maintain recommended / similar item relationships — links were one-way, manual, and easily drifted out of sync.",
+      "Catalog teams had no scalable way to maintain recommended and similar item relationships. Links were one way, manual, and drifted out of sync the moment anyone touched the catalog.",
     build:
-      "Built a focused interface for searching items, assigning recommended + similar SKUs, managing item substitutions, and toggling bi-directional sync so links stay reciprocal.",
+      "Built a focused interface for searching items, assigning recommended and similar SKUs, managing item substitutions, and toggling bi directional sync so links stay reciprocal.",
     img: recImg,
   },
 ];
@@ -77,39 +77,39 @@ const goals: Goal[] = [
     category: "Critical & Creative Thinking",
     title: "Inquiry & Analysis",
     goal:
-      "Get genuinely good at unpacking problems at Pepper — not just the obvious surface, but the hidden dependencies and downstream effects. Use tools like Cursor, Claude, and AWS to generate multiple solution paths and design systems that don't just patch a problem today, but help Pepper scale tomorrow.",
+      "Get genuinely good at unpacking problems at Pepper. Not just the obvious surface, but the hidden dependencies and downstream effects. I wanted to use tools like Cursor, Claude, and AWS to generate a few different solution paths and design systems that don't just patch a problem today, but actually help Pepper scale.",
     action:
-      "On every project I started by sitting with the team that owned the pain — ops, support, catalog — and mapping the current workflow end-to-end before writing a line of code. I'd brainstorm at least three angles per problem, weigh which stack made sense (Lovable vs. n8n vs. raw SQL), and pressure-test the shortlist with my manager before committing.",
+      "On every project I started by sitting with the team that owned the pain (ops, support, catalog) and mapping the current workflow end to end before writing a single line of code. I'd brainstorm at least three angles per problem, weigh which stack made sense (Lovable vs n8n vs raw SQL), and pressure test the shortlist with my manager before committing.",
     outcome:
-      "The SALT Control Center and Recommended + Similar tools both came out of this loop — collapsing what had been multi-tab, multi-team workflows into a single screen. I can now defend why each tool exists, what it replaced, and which downstream metrics it should move.",
+      "The SALT Control Center and Recommended and Similar tools both came out of this loop. They collapsed what had been multi tab, multi team workflows into a single screen. I can now defend why each tool exists, what it replaced, and which downstream metrics it should move.",
     reflection:
-      "Looking back, the biggest shift was learning to slow down at the start of a project instead of jumping straight to building. The instinct to ship fast is still there, but I trust the upfront mapping more now — it consistently saved me from rebuilding things mid-stream. Where I want to keep growing is in quantifying impact: I can articulate what each tool replaced, but I'd like to get sharper at tying that back to hard numbers earlier in the process.",
+      "Looking back, the biggest shift was learning to slow down at the start of a project instead of jumping straight to building. The instinct to ship fast is still there, but I trust the upfront mapping more now. It consistently saved me from rebuilding things halfway through. Where I want to keep growing is in quantifying impact. I can talk about what each tool replaced, but I'd like to get sharper at tying that back to hard numbers earlier in the process.",
   },
   {
     num: "Goal 02",
     category: "Communicating",
     title: "Oral Communication",
     goal:
-      "Get sharper at talking about my work — especially when explaining technical decisions to people who aren't technical. Present the tools I build with confidence, drive better requirement-gathering meetings, and ask the kind of questions that surface what teams actually need.",
+      "Get sharper at talking about my work, especially when explaining technical decisions to people who aren't technical. Present the tools I build with confidence, drive better requirement gathering meetings, and ask the kind of questions that surface what teams actually need.",
     action:
-      "Before every demo I rehearsed with my audience in mind first — adjusting depth for ops vs. engineering. In meetings I leaned into active listening: restating what stakeholders said, asking what would break the workflow, and looping back with my manager for feedback on how the message landed.",
+      "Before every demo I rehearsed with my audience in mind first, adjusting depth for ops vs engineering. In meetings I leaned into active listening. Restating what stakeholders said, asking what would break the workflow, and looping back with my manager for feedback on how the message landed.",
     outcome:
-      "I demoed the SALT Control Center and User Diagnostics tools live to cross-functional teammates and walked away with concrete adoption — not just polite nods. Stakeholders started pulling me into scoping conversations earlier, which is the clearest signal the communication was working.",
+      "I demoed the SALT Control Center and User Diagnostics tools live to cross functional teammates and walked away with real adoption, not just polite nods. Stakeholders started pulling me into scoping conversations earlier, which is the clearest signal the communication was working.",
     reflection:
-      "Early in the term I leaned too hard on showing the build instead of explaining the why. Once I started leading with the problem and the user, demos landed differently — people asked sharper questions and surfaced edge cases I'd missed. I'm more comfortable in the room now, but I want to keep working on async communication too: tighter Loom walkthroughs and written specs that don't rely on me being there to narrate.",
+      "Early in the term I leaned too hard on showing the build instead of explaining the why. Once I started leading with the problem and the user, demos landed differently. People asked sharper questions and surfaced edge cases I'd missed. I'm more comfortable in the room now, but I want to keep working on async communication too. Tighter Loom walkthroughs and written specs that don't rely on me being there to narrate.",
   },
   {
     num: "Goal 03",
     category: "Technological Literacy",
     title: "Stack Fluency",
     goal:
-      "Build real fluency across Pepper's stack — the no-code platforms, the AI layer, and the data plumbing underneath. Move beyond knowing how to use a tool to understanding why we picked it, where it breaks, and how to wire several together into something useful, fast.",
+      "Build real fluency across Pepper's stack. The no code platforms, the AI layer, and the data plumbing underneath. Move past knowing how to use a tool, into understanding why we picked it, where it breaks, and how to wire several of them together into something useful, fast.",
     action:
-      "I went deep on Lovable and n8n on every project, pushed AI features into the workflow wherever they removed manual toil (Claude for lead scoring, OpenAI for catalog tasks), and kept sharpening SQL + Python for the moments no-code couldn't carry the weight. I treated each tool's limits as the interesting part.",
+      "I went deep on Lovable and n8n on every project, pushed AI features into the workflow wherever they removed manual toil (Claude for lead scoring, OpenAI for catalog tasks), and kept sharpening SQL and Python for the moments no code couldn't carry the weight. I treated each tool's limits as the interesting part.",
     outcome:
-      "I shipped three internal tools and an AI-powered lead scoring automation in a single term, mixing Lovable, n8n, Postgres, and LLM APIs. I can now scope an idea on Monday and have a working prototype in front of users by Friday — which is the bar I wanted to hit.",
+      "I shipped three internal tools and an AI powered lead scoring automation in a single term, mixing Lovable, n8n, Postgres, and LLM APIs. I can now scope an idea on Monday and have a working prototype in front of users by Friday, which is the bar I wanted to hit.",
     reflection:
-      "What surprised me most was how much the tools themselves shaped how I thought about problems — knowing n8n well meant I started seeing automation opportunities everywhere, not just where someone asked for them. I hit the speed bar I wanted, but I noticed the gap between prototype and production-grade is where the real engineering lives, and that's the next bar I want to clear.",
+      "What surprised me most was how much the tools themselves shaped how I thought about problems. Knowing n8n well meant I started seeing automation opportunities everywhere, not just where someone asked for them. I hit the speed bar I wanted, but I noticed the gap between a prototype and something production grade is where the real engineering lives, and that's the next bar I want to clear.",
   },
 ];
 
@@ -190,7 +190,7 @@ function Index() {
                   Pepper is rebuilding the food supply chain from the ground
                   up. Founded by tech veterans from Uber Eats, Google, and
                   Amazon, the team ships digital tools that power foodservice
-                  distributors — modernizing an industry that still runs on
+                  distributors and modernizes an industry that still runs on
                   phone calls, fax orders, and spreadsheets.
                 </p>
               </div>
@@ -199,11 +199,11 @@ function Index() {
                   What They Do
                 </h4>
                 <p className="text-sm leading-relaxed">
-                  Pepper builds the operating system for foodservice — a
-                  platform connecting distributors, suppliers, and operators
-                  through smarter ordering, catalog intelligence, and
-                  AI-powered workflows that take friction out of every link in
-                  the chain.
+                  Pepper builds the operating system for foodservice. A
+                  platform that connects distributors, suppliers, and
+                  operators through smarter ordering, catalog intelligence,
+                  and AI powered workflows that take friction out of every
+                  link in the chain.
                 </p>
               </div>
               <div className="p-6 bg-surface border-l-2 border-accent">
@@ -211,10 +211,10 @@ function Index() {
                   Why It Matters
                 </h4>
                 <p className="text-sm leading-relaxed">
-                  Foodservice is a multi-trillion dollar industry running on
-                  decades-old infrastructure. Pepper's bet: speed, ownership,
-                  and small teams shipping real software beat bureaucracy —
-                  and the supply chain is overdue for both.
+                  Foodservice is a multi trillion dollar industry running on
+                  decades old infrastructure. Pepper's bet is simple. Speed,
+                  ownership, and small teams shipping real software beat
+                  bureaucracy, and the supply chain is overdue for both.
                 </p>
               </div>
             </div>

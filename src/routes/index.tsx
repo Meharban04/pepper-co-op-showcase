@@ -74,42 +74,42 @@ type Goal = {
 const goals: Goal[] = [
   {
     num: "Goal 01",
-    category: "Critical & Creative Thinking",
-    title: "Inquiry & Analysis",
+    category: "Problem Solving",
+    title: "Systematic Independence",
     goal:
-      "Get genuinely good at unpacking problems at Pepper. Not just the obvious surface, but the hidden dependencies and downstream effects. I wanted to use tools like Cursor, Claude, and AWS to generate a few different solution paths and design systems that don't just patch a problem today, but actually help Pepper scale.",
+      "I want to improve my problem-solving skills by becoming more systematic and independent when dealing with ambiguous or complex problems. I want to get better at breaking large problems into smaller parts, identifying the root cause, evaluating different possible solutions, and choosing an approach based on its impact and practicality. I also want to become more comfortable working through problems independently before asking for help.",
     action:
-      "On every project I started by sitting with the team that owned the pain (ops, support, catalog) and mapping the current workflow end to end before writing a single line of code. I'd brainstorm at least three angles per problem, weigh which stack made sense (Lovable vs n8n vs raw SQL), and pressure test the shortlist with my manager before committing.",
+      "For each project, I will first clearly define the problem and break it down into smaller, manageable components before beginning implementation. I will investigate the root cause rather than immediately addressing the most obvious issue, and I will consider multiple possible solutions before deciding on an approach. When I encounter a problem I cannot immediately solve, I will document what I have tried, research potential solutions, and test different approaches before asking for assistance. I will also seek feedback from my manager and teammates on my problem-solving process and use that feedback to improve how I approach future projects.",
     outcome:
-      "The SALT Control Center and Recommended and Similar tools both came out of this loop. They collapsed what had been multi tab, multi team workflows into a single screen. I can now defend why each tool exists, what it replaced, and which downstream metrics it should move.",
+      "I will know I am successful when I can independently work through unfamiliar problems and consistently arrive at practical solutions. I will be able to clearly explain how I identified the root cause of a problem, why I chose a particular solution, and what alternatives I considered. I will also become more efficient at troubleshooting issues and require less guidance when dealing with problems I have not encountered before. Feedback from my manager and teammates will help confirm that I am becoming more independent and effective at solving problems.",
     reflection:
-      "Looking back, the biggest shift was learning to slow down at the start of a project instead of jumping straight to building. The instinct to ship fast is still there, but I trust the upfront mapping more now. It consistently saved me from rebuilding things halfway through. Where I want to keep growing is in quantifying impact. I can talk about what each tool replaced, but I'd like to get sharper at tying that back to hard numbers earlier in the process.",
+      "Throughout my work term, I became more comfortable approaching problems that did not have an obvious solution. I learned to spend more time understanding the problem and its underlying causes before jumping into implementation. I also became better at breaking larger problems into smaller pieces and testing different approaches. One area I would continue to improve is becoming faster at determining which problems require deeper investigation and which can be solved with a simpler approach. Overall, this experience helped me become a more independent and structured problem solver.",
   },
   {
     num: "Goal 02",
-    category: "Communicating",
-    title: "Oral Communication",
+    category: "Technological Literacy",
+    title: "Systems Fluency",
     goal:
-      "Get sharper at talking about my work, especially when explaining technical decisions to people who aren't technical. Present the tools I build with confidence, drive better requirement gathering meetings, and ask the kind of questions that surface what teams actually need.",
+      "I want to expand my technological literacy by becoming more confident with the different technologies, tools, and systems used to build and support solutions at Pepper. Rather than only learning how to use individual tools, I want to better understand how different technologies fit together and when each one is appropriate. I also want to improve my ability to learn new technologies independently and apply them effectively to real business problems.",
     action:
-      "Before every demo I rehearsed with my audience in mind first, adjusting depth for ops vs engineering. In meetings I leaned into active listening. Restating what stakeholders said, asking what would break the workflow, and looping back with my manager for feedback on how the message landed.",
+      "Throughout my work term, I will actively learn the technologies that are relevant to my projects by using documentation, experimenting with tools, and building small proofs of concept when necessary. I will focus on understanding not only how a technology works, but also why it is being used and what alternatives are available. I will continue developing my skills with tools such as AWS, APIs, databases, automation platforms, and AI-powered tools, while also learning new technologies when they are required for a project. I will document useful things I learn so I can apply them to future projects and share them with teammates when appropriate.",
     outcome:
-      "I demoed the SALT Control Center and User Diagnostics tools live to cross functional teammates and walked away with real adoption, not just polite nods. Stakeholders started pulling me into scoping conversations earlier, which is the clearest signal the communication was working.",
+      "I will know I am successful when I can independently learn and apply unfamiliar technologies to real projects. I will be able to explain how the different systems I work with connect and why specific technologies are appropriate for different situations. I will also be able to troubleshoot technical issues more independently and identify opportunities where a different technology or approach could make a solution more efficient, reliable, or scalable. Feedback from my manager and teammates will help me evaluate whether I am becoming more technically capable and adaptable.",
     reflection:
-      "Early in the term I leaned too hard on showing the build instead of explaining the why. Once I started leading with the problem and the user, demos landed differently. People asked sharper questions and surfaced edge cases I'd missed. I'm more comfortable in the room now, but I want to keep working on async communication too. Tighter Loom walkthroughs and written specs that don't rely on me being there to narrate.",
+      "During my work term, I significantly expanded my understanding of the technologies used to build internal tools and automate processes. I became more comfortable learning unfamiliar tools independently and connecting different systems together to create useful solutions. I also learned that technological literacy is not just about knowing how to use a specific tool, but understanding when and why it should be used. I became more confident experimenting with new technologies and adapting them to different problems. Going forward, I would like to continue improving my understanding of the underlying technical concepts so I can make stronger technology decisions rather than focusing only on getting a solution working.",
   },
   {
     num: "Goal 03",
-    category: "Technological Literacy",
-    title: "Stack Fluency",
+    category: "Personal Organization",
+    title: "Time Management",
     goal:
-      "Build real fluency across Pepper's stack. The no code platforms, the AI layer, and the data plumbing underneath. Move past knowing how to use a tool, into understanding why we picked it, where it breaks, and how to wire several of them together into something useful, fast.",
+      "I want to improve my personal organization and time-management skills so I can manage multiple projects, priorities, and deadlines more effectively. I want to become better at planning my work, estimating how long tasks will take, prioritizing important work, and communicating when priorities or timelines change. My goal is to consistently stay organized while still being flexible when unexpected requests or higher-priority work comes up.",
     action:
-      "I went deep on Lovable and n8n on every project, pushed AI features into the workflow wherever they removed manual toil (Claude for lead scoring, OpenAI for catalog tasks), and kept sharpening SQL and Python for the moments no code couldn't carry the weight. I treated each tool's limits as the interesting part.",
+      "At the beginning of each week, I will identify my main priorities, upcoming deadlines, and tasks that need to be completed. I will break larger projects into smaller tasks and estimate the time required for each one so I can create a realistic schedule. I will regularly review my progress and adjust my priorities when new work comes up. I will also keep track of outstanding tasks and follow-ups so that nothing is missed between projects. When I expect a deadline or priority to be affected, I will communicate this early with my manager or teammates rather than waiting until the deadline approaches.",
     outcome:
-      "I shipped three internal tools and an AI powered lead scoring automation in a single term, mixing Lovable, n8n, Postgres, and LLM APIs. I can now scope an idea on Monday and have a working prototype in front of users by Friday, which is the bar I wanted to hit.",
+      "I will know I am successful when I can consistently manage multiple projects without missing important deadlines or follow-ups. I will be able to prioritize tasks effectively, maintain an organized workflow, and adjust my schedule when unexpected work arises. I will also improve my ability to estimate how long tasks will take and use that information to plan my workload. My manager's feedback and my ability to consistently complete work on time and with minimal last-minute pressure will be indicators that I have improved my organization and time management.",
     reflection:
-      "What surprised me most was how much the tools themselves shaped how I thought about problems. Knowing n8n well meant I started seeing automation opportunities everywhere, not just where someone asked for them. I hit the speed bar I wanted, but I noticed the gap between a prototype and something production grade is where the real engineering lives, and that's the next bar I want to clear.",
+      "During my work term, I became more aware of how important organization and time management are when working on multiple projects at the same time. I learned that breaking larger projects into smaller tasks and keeping track of priorities made it easier to stay on top of my workload. I also became better at adjusting my plans when unexpected tasks or changes in priority came up. One area I would continue to improve is estimating how long unfamiliar tasks will take, as some projects can change significantly once development begins. Overall, I developed a more structured approach to managing my workload and became better at balancing multiple responsibilities.",
   },
 ];
 

@@ -14,6 +14,7 @@ type Project = {
   lede: string;
   problem: string;
   build: string;
+  maintained: string;
   img: string;
   reverse?: boolean;
 };
@@ -28,6 +29,8 @@ const projects: Project[] = [
       "Onboarding a distributor used to mean engineers manually toggling SALT API integrations, editing configs, and kicking off rematches in three or four disconnected internal tools.",
     build:
       "Designed and shipped the SALT Control Center, a single screen that handles distributor details, API toggles, configuration editing, rematch jobs, and per supplier tool management.",
+    maintained:
+      "Kept iterating as onboarding volume picked up. Added bulk actions for per supplier tool management, tightened error handling on rematch jobs so failures surface immediately instead of failing silently, and layered in configuration validation based on edge cases the ops team hit during rollout.",
     img: saltImg,
   },
   {
@@ -39,6 +42,8 @@ const projects: Project[] = [
       "Support and ops were running raw database queries to debug login, invite, and permission issues. It was slow, risky, and pretty unfriendly to non technical teammates.",
     build:
       "Shipped a clean diagnostics surface. Search by name, email, or phone, see recently created users, and view user type, status, and account age in one place.",
+    maintained:
+      "Refined based on daily support usage. Added phone number search once it became the most requested lookup path, surfaced account creation source and last login activity, and kept the tool strictly read only so it stays safe for non technical teammates to run on their own.",
     img: diagImg,
     reverse: true,
   },
@@ -51,6 +56,8 @@ const projects: Project[] = [
       "Catalog teams had no scalable way to maintain recommended and similar item relationships. Links were one way, manual, and drifted out of sync the moment anyone touched the catalog.",
     build:
       "Built a focused interface for searching items, assigning recommended and similar SKUs, managing item substitutions, and toggling bi directional sync so links stay reciprocal.",
+    maintained:
+      "Fixed edge cases where bi directional links could drift out of sync under concurrent catalog edits, added bulk substitution import for teams onboarding large distributor catalogs, and improved search relevance so items surface faster when assigning recommendations.",
     img: recImg,
   },
 ];
@@ -136,12 +143,10 @@ function Index() {
           <div className="flex flex-col md:flex-row md:items-end justify-between gap-12">
             <div className="max-w-[820px]">
               <span className="font-mono text-xs uppercase tracking-widest text-muted-foreground">
-                Co-op Analyst · Pepper Labs
+                Co-op Analyst · Pepper
               </span>
               <h1 className="mt-6 text-6xl sm:text-7xl md:text-[112px] font-extrabold leading-[0.88] tracking-tighter text-balance">
                 PEPPER
-                <br />
-                LABS
                 <br />
                 CO-OP
               </h1>
@@ -178,7 +183,7 @@ function Index() {
                 </span>
               </div>
               <h2 className="text-4xl md:text-5xl font-extrabold tracking-tighter">
-                Pepper Labs.
+                Pepper.
               </h2>
             </div>
             <div className="lg:col-span-8 space-y-4">
@@ -253,6 +258,12 @@ function Index() {
                       Build
                     </h4>
                     <p className="text-sm leading-relaxed">{p.build}</p>
+                  </div>
+                  <div className="p-6 bg-surface border-l-2 border-accent">
+                    <h4 className="font-mono text-xs uppercase tracking-widest mb-2 text-muted-foreground">
+                      Maintained
+                    </h4>
+                    <p className="text-sm leading-relaxed">{p.maintained}</p>
                   </div>
                 </div>
               </div>

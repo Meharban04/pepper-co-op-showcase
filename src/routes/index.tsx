@@ -119,7 +119,7 @@ function Index() {
       <nav className="sticky top-0 z-50 bg-background/80 backdrop-blur-md border-b border-border">
         <div className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
           <span className="font-mono text-sm font-medium tracking-tighter">
-            CO-OP_LOG:2026.01_04
+            CO-OP_LOG:2026.05_04
           </span>
           <div className="hidden sm:flex gap-8 text-sm font-medium">
             <a href="#company" className="hover:text-accent transition-colors">Company</a>
@@ -159,7 +159,7 @@ function Index() {
                 Term
               </span>
               <div className="text-3xl md:text-4xl font-extrabold tracking-tighter">
-                JAN — APR
+                MAY — AUG
               </div>
               <span className="font-mono text-xs uppercase tracking-widest text-muted-foreground">
                 Toronto / Remote
